@@ -1,28 +1,27 @@
 "use client";
 
 import { useState } from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Landing2() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="min-h-screen bg-white overflow-hidden">
-
       {/* Header */}
       <header className="relative z-40 bg-white/80 backdrop-blur-sm border-b border-gray-100 sticky top-0">
-        <div className="flex justify-between items-center p-6 max-w-7xl mx-auto">
-            <div className="flex items-center space-x-2">
-              <Image
-                src="/images/cajulogo.png"
-                alt="Logo Caju Code"
-                width={50}
-                height={50}
-                className="cajulogo"
-                />
-            </div>
+        <div className="flex justify-start items-center gap-8 p-6 max-w-7xl mx-auto">
+          <div className="flex items-center space-x-2">
+            <Image
+              src="/images/cajulogo.png"
+              alt="Logo Caju Code"
+              width={50}
+              height={50}
+              className="cajulogo"
+            />
+          </div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 flex-1 justify-start ml-8">
             <a
               href="#services"
               className="text-gray-700 hover:text-[#fb4202] transition-colors font-medium"
@@ -56,8 +55,15 @@ export default function Landing2() {
           </nav>
 
           {/* Desktop CTA Button */}
-          <button className="hidden md:block bg-gradient-to-r from-[#feaa24] to-[#fb4202] text-white px-6 py-3 rounded-2xl hover:from-[#fb4202] hover:to-[#6a4c93] transition-all duration-300 font-semibold shadow-lg">
-            Começar Projeto
+          <button className="hidden md:flex items-center gap-2 bg-gradient-to-r from-[#feaa24] to-[#fb4202] text-white px-6 py-3 rounded-3xl hover:from-[#fb4202] hover:to-[#6a4c93] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px] ml-auto">
+            Sign up
+            <Image
+              src="/images/setabranca.png"
+              alt="Seta"
+              width={20}
+              height={20}
+              className="ml-1"
+            />
           </button>
 
           {/* Mobile Menu Button */}
@@ -148,9 +154,16 @@ export default function Landing2() {
                 </a>
               </nav>
 
-              <div className="mt-8">
-                <button className="w-full bg-gradient-to-r from-[#feaa24] to-[#fb4202] text-white px-6 py-3 rounded-2xl hover:from-[#fb4202] hover:to-[#6a4c93] transition-all duration-300 font-semibold shadow-lg">
-                  Começar Projeto
+              <div className="button-sign-up">
+                <button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#feaa24] to-[#fb4202] text-white px-6 py-3 rounded-3xl hover:from-[#fb4202] hover:to-[#6a4c93] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]">
+                  Sign up
+                  <Image
+                    src="/images/setabranca.png"
+                    alt="Seta"
+                    width={20}
+                    height={20}
+                    className="ml-2"
+                  />
                 </button>
               </div>
             </div>
@@ -173,18 +186,18 @@ export default function Landing2() {
             </span>
           </div> */}
 
-            <h1 className="block text-transparent bg-clip-text bg-gradient-to-r from-[#feaa24] via-[#fb4202] to-[#6a4c93] animate-gradient">
-              We turn ideas into code.
-            </h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#feaa24] via-[#fb4202] to-[#6a4c93] animate-gradient leading-tight text-center px-4">
+          We turn ideas into code.
+        </h1>
 
-          {/* <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
+        {/* <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
             Desenvolvemos soluções digitais modernas que fazem a diferença.
             <span className="block mt-2 font-semibold text-[#1e83c5]">
               Web, mobile e consultoria tech com foco na inclusão.
             </span>
           </p> */}
 
-          {/* <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        {/* <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button className="group bg-gradient-to-r from-[#fb4202] to-[#6a4c93] text-white px-10 py-4 rounded-2xl text-lg font-bold hover:from-[#6a4c93] hover:to-[#1e83c5] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
               <span className="flex items-center gap-2">
                 Iniciar Projeto
@@ -235,7 +248,7 @@ export default function Landing2() {
                   no qual mais pessoas tenham oportunidades reais.
                 </p>
               </div>
-              <button className="mt-8 bg-gradient-to-r from-[#8dbf30] to-[#1e83c5] text-white px-8 py-4 rounded-2xl font-bold hover:from-[#1e83c5] hover:to-[#6a4c93] transition-all duration-300 shadow-lg">
+              <button className="mt-8 bg-gradient-to-r from-[#8dbf30] to-[#1e83c5] text-white px-8 py-4 rounded-3xl font-bold hover:from-[#1e83c5] hover:to-[#6a4c93] transition-all duration-300 shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]">
                 Vamos crescer juntos? 🚀
               </button>
             </div>
@@ -308,7 +321,7 @@ export default function Landing2() {
                     Performance otimizada
                   </li>
                 </ul>
-                <button className="bg-gradient-to-r from-[#feaa24] to-[#fb4202] text-white px-8 py-3 rounded-xl font-semibold hover:from-[#fb4202] hover:to-[#6a4c93] transition-all">
+                <button className="bg-gradient-to-r from-[#feaa24] to-[#fb4202] text-white px-8 py-3 rounded-3xl font-semibold hover:from-[#fb4202] hover:to-[#6a4c93] transition-all shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]">
                   Explorar Web
                 </button>
               </div>
@@ -326,7 +339,7 @@ export default function Landing2() {
                 Aplicativos nativos e híbridos para iOS e Android com
                 experiência única.
               </p>
-              <button className="text-[#8dbf30] font-semibold hover:text-[#6a4c93] transition-colors">
+              <button className="bg-[#8dbf30] text-white px-6 py-2 rounded-3xl font-semibold hover:bg-[#6a4c93] transition-all shadow-[3px_3px_0px_0px_#000000] hover:shadow-[4px_4px_0px_0px_#000000] hover:translate-x-[-1px] hover:translate-y-[-1px]">
                 Explorar Mobile →
               </button>
             </div>
@@ -342,7 +355,7 @@ export default function Landing2() {
                 Estratégias tecnológicas para acelerar o crescimento do seu
                 negócio.
               </p>
-              <button className="text-[#6a4c93] font-semibold hover:text-[#1e83c5] transition-colors">
+              <button className="bg-[#6a4c93] text-white px-6 py-2 rounded-3xl font-semibold hover:bg-[#1e83c5] transition-all shadow-[3px_3px_0px_0px_#000000] hover:shadow-[4px_4px_0px_0px_#000000] hover:translate-x-[-1px] hover:translate-y-[-1px]">
                 Explorar Consultoria →
               </button>
             </div>
@@ -407,7 +420,7 @@ export default function Landing2() {
                   .replace("from-", "from-")
                   .replace(
                     "to-",
-                    "to-"
+                    "to-",
                   )}/10 p-8 rounded-3xl border-2 border-transparent hover:border-current transition-all duration-300 hover:scale-105`}
               >
                 <div
@@ -507,7 +520,7 @@ export default function Landing2() {
             realidade.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="group bg-gradient-to-r from-[#feaa24] to-[#fb4202] text-white px-10 py-4 rounded-2xl text-lg font-bold hover:from-[#8dbf30] hover:to-[#1e83c5] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+            <button className="group bg-gradient-to-r from-[#feaa24] to-[#fb4202] text-white px-10 py-4 rounded-3xl text-lg font-bold hover:from-[#8dbf30] hover:to-[#1e83c5] transition-all duration-300 shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]">
               <span className="flex items-center gap-2">
                 Falar com nossa equipe
                 <span className="group-hover:translate-x-1 transition-transform">
@@ -515,7 +528,7 @@ export default function Landing2() {
                 </span>
               </span>
             </button>
-            <button className="border-2 border-[#6a4c93] text-[#6a4c93] px-10 py-4 rounded-2xl text-lg font-bold hover:bg-[#6a4c93] hover:text-white transition-all duration-300">
+            <button className="bg-[#6a4c93] text-white px-10 py-4 rounded-3xl text-lg font-bold hover:bg-[#1e83c5] transition-all duration-300 shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]">
               Ver nossos casos
             </button>
           </div>

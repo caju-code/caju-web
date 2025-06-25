@@ -13,23 +13,23 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import { Jura } from 'next/font/google'
+import { ReactNode } from "react";
+
+const jura = Jura({
+  subsets: ['latin'],
+  weight: ['700'], // só bold
+})
+
 export const metadata: Metadata = {
   title: "Caju Code - Desenvolvimento Web & Mobile",
   description: "Transformamos suas ideias em soluções digitais incríveis. Desenvolvimento web moderno, apps mobile e consultoria tech.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-BR">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="pt-br">
+      <body className={jura.className}>{children}</body>
     </html>
-  );
+  )
 }
