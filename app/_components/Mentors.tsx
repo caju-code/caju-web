@@ -81,7 +81,7 @@ export default function Mentors(){
                             <div
                                 key={index}
                                 className="flex-shrink-0"
-                                style={{ width: '622px', padding: '90px' }}
+                                style={{ width: '622px', padding: '0 90px 90px 90px' }}
                             >
                                 <div className="mentor-card-wrapper relative">
                                     {/* Shadow element */}
