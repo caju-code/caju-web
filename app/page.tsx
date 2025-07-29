@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Mentors from "./_components/Mentors";
 
 export default function Landing2() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -362,6 +363,9 @@ export default function Landing2() {
           </div>
         </div>
       </section>
+
+       {/* Mentor Section */}
+       <Mentors/>
 
       {/* Values Section - Card Grid */}
       <section id="values" className="py-24 bg-white">

@@ -60,3 +60,14 @@ body {
   font-weight: Bold;
   font-size: 100px;
 }
+
+.mentor-card {
+  position: relative;
+  box-shadow: 12px 12px 0px 0px #000000;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.mentor-card:hover {
+  box-shadow: 6px 6px 0px 0px #000000;
+  transform: translate(-2px, -2px);
+}
