@@ -1,10 +1,10 @@
-export default function Services() {
+export default function OurServices() {
   return (
-    <section id="services" className="py-24 bg-white/80">
+    <section id="services" className="py-24 bg-white/85">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            O que fazemos?
+            Como ajudamos?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Oferecemos soluções completas para transformar sua visão em

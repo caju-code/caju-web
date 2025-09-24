@@ -1,6 +1,19 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap");
 
+body {
+  font-family: var(--font-rubik);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-jura);
+}
+
 .mentor-card {
   position: relative;
   box-shadow: 12px 12px 0px 0px #000000;

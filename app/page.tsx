@@ -3,14 +3,14 @@
 import Header from "./_components/Header";
 import HeroSection from "./_components/Hero";
 import AboutSection from "./_components/About";
-import ServicesSection from "./_components/Services";
+import ServicesSection from "./_components/OurServices";
 import Mentors from "./_components/Mentors";
 import ValuesSection from "./_components/Values";
 import ProcessSection from "./_components/ProcessSection";
 import CTASection from "./_components/CTASection";
 import Footer from "./_components/Footer";
 import AnimatedBackground from "./_components/AnimatedBackground";
-import Services from "./_components/Services";
+import OurServices from "./_components/OurServices";
 
 export default function Page() {
   return (
@@ -20,7 +20,7 @@ export default function Page() {
         <Header />
         <div className="pt-16">
           <HeroSection />
-          <Services />
+          <OurServices />
           {/* <AboutSection /> */}
           <Mentors />
           <ValuesSection />

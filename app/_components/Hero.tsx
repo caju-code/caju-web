@@ -1,7 +1,41 @@
+"use client";
+import { useState, useEffect } from "react";
+import { ReactTyped } from "react-typed";
+
 export default function Hero() {
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 15) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#feaa24] via-[#fb4202] to-[#6a4c93] animate-gradient leading-tight text-center px-4"></h1>
+    <section className="relative min-h-[87vh] flex items-center justify-center bg-gradient-to-br">
+      <h1
+        className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-black leading-tight text-center px-4 transition-all duration-1000 ease-in-out ${
+          hidden ? "opacity-0 -translate-y-12" : "opacity-100 translate-y-0"
+        }`}
+      >
+        <ReactTyped
+          strings={[
+            "O CÓDIGO DA FRUTOS!",
+            "Mentorias gratuitas.",
+            "Consultorias para empresas.",
+          ]}
+          typeSpeed={80}
+          backSpeed={50}
+          loop
+        />
+      </h1>
     </section>
   );
 }
