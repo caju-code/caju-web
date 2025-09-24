@@ -7,21 +7,28 @@ import ServicesSection from "./_components/Services";
 import Mentors from "./_components/Mentors";
 import ValuesSection from "./_components/Values";
 import ProcessSection from "./_components/ProcessSection";
-import CTASection from "./_components/CTAsection";
+import CTASection from "./_components/CTASection";
 import Footer from "./_components/Footer";
+import AnimatedBackground from "./_components/AnimatedBackground";
+import Services from "./_components/Services";
 
-export default function Landing2() {
+export default function Page() {
   return (
-    <div className="min-h-screen bg-white overflow-hidden">
-      <Header />
-      <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <Mentors />
-      <ValuesSection />
-      <ProcessSection />
-      <CTASection />
-      <Footer />
-    </div>
+    <>
+      <AnimatedBackground />
+      <div className="min-h-screen overflow-hidden">
+        <Header />
+        <div className="pt-16">
+          <HeroSection />
+          <Services />
+          {/* <AboutSection /> */}
+          <Mentors />
+          <ValuesSection />
+          <ProcessSection />
+          <CTASection />
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 }

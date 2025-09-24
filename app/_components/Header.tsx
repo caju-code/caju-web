@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="relative z-40 bg-white/80 backdrop-blur-sm border-b border-gray-100 sticky top-0">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
         <div className="flex justify-start items-center gap-8 p-6 max-w-7xl mx-auto">
           <div className="flex items-center space-x-2">
             <Image
