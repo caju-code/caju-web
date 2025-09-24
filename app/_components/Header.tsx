@@ -51,10 +51,10 @@ export default function Header() {
             </a>
           </nav>
 
-          <button className="hidden md:flex items-center gap-2 bg-gradient-to-r from-[#feaa24] to-[#fb4202] text-white px-6 py-3 rounded-3xl hover:from-[#feaa24] hover:to-[#8dbf30] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px] ml-auto">
+          <button className="hidden md:flex items-center gap-2 text-black bg-gradient-to-r from-[#feaa24] to-[#fb4202] px-6 py-3 rounded-3xl hover:from-[#feaa24] hover:to-[#8dbf30] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px] ml-auto">
             Sign up
             <Image
-              src="/images/setabranca.png"
+              src="/svg/setaPreta.svg"
               alt="Seta"
               width={20}
               height={20}
