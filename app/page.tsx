@@ -4,7 +4,7 @@ import Header from "./_components/Header";
 import HeroSection from "./_components/Hero";
 import AboutSection from "./_components/About";
 import ServicesSection from "./_components/OurServices";
-import Mentors from "./_components/Mentors";
+import Mentors from "./_components/mentors/Mentors";
 import ValuesSection from "./_components/Values";
 import ProcessSection from "./_components/ProcessSection";
 import CTASection from "./_components/CTASection";
