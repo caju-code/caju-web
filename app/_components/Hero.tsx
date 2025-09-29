@@ -27,9 +27,10 @@ export default function Hero() {
       >
         <ReactTyped
           strings={[
-            "O CÓDIGO DA FRUTOS!",
-            "Mentorias gratuitas.",
-            "Consultorias para empresas.",
+            "O CÓDIGO DÁ FRUTOS!",
+            "Abra o espaço.",
+            "Escreva o código...",
+            "Colha frutos.",
           ]}
           typeSpeed={80}
           backSpeed={50}

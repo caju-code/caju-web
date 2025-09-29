@@ -10,6 +10,14 @@ import MentorCard from "./MentorCard";
 export default function Mentors() {
   const mentors = [
     {
+      name: "Caju",
+      description:
+        "Sou dona da p* toda MUAHAHAH Proficiente em CS {CatScript}. A Caju Code, em breve irá hackear todas as centrais de petisco e atum miauuuu",
+      image: "/images/cajuProfile.png",
+      bgColor: "#6a4c93",
+      linkedIn: "https://www.linkedin.com/company/caju-code/",
+    },
+    {
       name: "Aline Marjorie",
       description:
         "Don't worry if you don't fit in with everyone else, we would rather you stand out than fall in line.",
@@ -20,15 +28,15 @@ export default function Mentors() {
     {
       name: "Iasmin Mendes",
       description:
-        "Always given 24 hours a full day to make the most of your opportunities.",
+        "Eng. de Software & forrozeira de coração. Não planejei atuar na área, mas aqui estou e o que eu AMO sobre software é a COLABORAÇÃO: aprender e construir algo JUNTOS. Vamos?",
       image: "/images/iasmin.png",
       bgColor: "#FB4202",
-      linkedIn: "Learn more",
+      linkedIn: "https://www.linkedin.com/in/mendesiasmin/",
     },
     {
       name: "Fernanda Vilela",
       description:
-        "dei algumas voltas na vida, acho que é normal, estranho é quem nunca se perde. O ponto é que hoje quero te ajudar nas suas voltas, assim como alguém me ajudou nas minhas. Desde os 14, estive envolvida com educação, já mexi com música, eletrônica e, hoje, com dados e programação. Sou mãe da Caju (gata gorducha) e de mais 4 fedorentinhos, e aí abri a Caju Code e tenho a ajuda de vários amigos :)",
+        "Dei algumas voltas na vida e quero te ajudar nas suas! Desde os 14, lidando com educação, música, programação e dados. Sou mãe da Caju e tenho a ajuda de vários amigos :)",
       image: "/images/fernanda.png",
       bgColor: "#8CBE2F",
       linkedIn: "https://www.linkedin.com/in/fegvilela/",

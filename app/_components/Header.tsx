@@ -32,12 +32,6 @@ export default function Header() {
               Sobre
             </a>
             <a
-              href="#values"
-              className="text-gray-700 hover:text-[#8dbf30] transition-colors font-medium"
-            >
-              Valores
-            </a>
-            <a
               href="#process"
               className="text-gray-700 hover:text-[#fb4202] transition-colors font-medium"
             >

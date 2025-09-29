@@ -53,7 +53,7 @@ export default function MentorCard({
                 <h3 className="text-white font-bold text-2xl mb-2">{name}</h3>
               </div>
 
-              <div className="flex-1 mb-6">
+              <div className="flex-1 mb-6 text-center">
                 <p className="text-white/90 text-base leading-relaxed">
                   {description}
                 </p>

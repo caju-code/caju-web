@@ -33,13 +33,13 @@ export default function Values() {
   ];
 
   return (
-    <section id="values" className="py-40 pb-40 bg-white/90">
+    <section id="values" className="py-40 pb-40 bg-[#8dbf3070]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#e8471d] mb-6">
             Nossos Valores
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-[#e8471d] max-w-2xl mx-auto">
             Os princípios que guiam nosso trabalho e nossa comunidade.
           </p>
         </div>
@@ -48,13 +48,12 @@ export default function Values() {
           {values.map((value, index) => (
             <div
               key={index}
-              style={{ backgroundColor: `${value.color}99` }}
-              className="p-8 rounded-3xl border-2 border-transparent hover:border-current transition-all duration-300 hover:scale-105"
+              className="p-8 rounded-3xl border-2 bg-[#719e1b] border-white hover:border-current transition-all duration-300 hover:scale-105"
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">
                 {value.title}
               </h3>
-              <p className="text-gray-900 leading-relaxed">{value.desc}</p>
+              <p className="text-white leading-relaxed">{value.desc}</p>
             </div>
           ))}
         </div>
