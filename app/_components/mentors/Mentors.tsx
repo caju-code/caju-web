@@ -28,7 +28,7 @@ export default function Mentors() {
     {
       name: "Fernanda Vilela",
       description:
-        "Treat our service users like family, and stick to our ethics like a champion.",
+        "dei algumas voltas na vida, acho que é normal, estranho é quem nunca se perde. O ponto é que hoje quero te ajudar nas suas voltas, assim como alguém me ajudou nas minhas. Desde os 14, estive envolvida com educação, já mexi com música, eletrônica e, hoje, com dados e programação. Sou mãe da Caju (gata gorducha) e de mais 4 fedorentinhos, e aí abri a Caju Code e tenho a ajuda de vários amigos :)",
       image: "/images/fernanda.png",
       bgColor: "#8CBE2F",
       linkedIn: "https://www.linkedin.com/in/fegvilela/",
@@ -44,7 +44,7 @@ export default function Mentors() {
   ];
 
   return (
-    <section className="py-24 pb-40 bg-gray-50">
+    <section className="py-40 pb-40 bg-gray-50">
       <div className="mentors text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
           Nossos Mentores
@@ -77,7 +77,7 @@ export default function Mentors() {
                 grabCursor={true}
                 watchOverflow={true}
                 className="!overflow-visible"
-                wrapperClass="pb-12 !items-stretch"
+                wrapperClass="!items-stretch"
               >
                 {mentors.map((mentor, index) => (
                   <SwiperSlide

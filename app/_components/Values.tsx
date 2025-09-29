@@ -1,45 +1,39 @@
 export default function Values() {
   const values = [
     {
-      icon: "🤝",
       title: "Inclusão",
       desc: "Todo mundo merece um espaço seguro para aprender e crescer.",
-      colors: "from-[#feaa24] to-[#fb4202]",
+      color: "#f7a82c",
     },
     {
-      icon: "🚀",
       title: "Colaboração",
       desc: "Juntos, vamos mais longe! A troca de conhecimento é essencial.",
-      colors: "from-[#8dbf30] to-[#1e83c5]",
+      color: "#e8471d",
     },
     {
-      icon: "✨",
       title: "Autenticidade",
       desc: "Aqui, você pode ser quem é, sem filtros.",
-      colors: "from-[#6a4c93] to-[#1e83c5]",
+      color: "#719e1b",
     },
     {
-      icon: "💝",
       title: "Respeito",
       desc: "Cada trajetória é única, e valorizamos isso.",
-      colors: "from-[#1e83c5] to-[#feaa24]",
+      color: "#1a83c5",
     },
     {
-      icon: "📚",
       title: "Aprendizado contínuo",
       desc: "Sempre há espaço para evoluir, sem pressa e sem pressão.",
-      colors: "from-[#fb4202] to-[#6a4c93]",
+      color: "#8dbf30",
     },
     {
-      icon: "🌍",
       title: "Impacto",
       desc: "Queremos criar tecnologia mais acessível, diversa e inovadora.",
-      colors: "from-[#feaa24] to-[#8dbf30]",
+      color: "#cda466",
     },
   ];
 
   return (
-    <section id="values" className="py-24 bg-white">
+    <section id="values" className="py-40 pb-40 bg-white/90">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -54,22 +48,13 @@ export default function Values() {
           {values.map((value, index) => (
             <div
               key={index}
-              className={`group bg-gradient-to-br ${value.colors
-                .replace("from-", "from-")
-                .replace(
-                  "to-",
-                  "to-"
-                )}/10 p-8 rounded-3xl border-2 border-transparent hover:border-current transition-all duration-300 hover:scale-105`}
+              style={{ backgroundColor: `${value.color}99` }}
+              className="p-8 rounded-3xl border-2 border-transparent hover:border-current transition-all duration-300 hover:scale-105"
             >
-              <div
-                className={`w-16 h-16 bg-gradient-to-r ${value.colors} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}
-              >
-                <span className="text-white text-2xl">{value.icon}</span>
-              </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 {value.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">{value.desc}</p>
+              <p className="text-gray-900 leading-relaxed">{value.desc}</p>
             </div>
           ))}
         </div>

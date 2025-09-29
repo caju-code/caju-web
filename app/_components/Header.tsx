@@ -149,7 +149,7 @@ export default function Header() {
               </nav>
 
               <div className="button-sign-up">
-                <button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#feaa24] to-[#fb4202] text-white px-6 py-3 rounded-3xl hover:from-[#fb4202] hover:to-[#6a4c93] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]">
+                <button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#feaa24] to-[#e8471d] text-white px-6 py-3 rounded-3xl hover:from-[#fb4202] hover:to-[#6a4c93] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]">
                   Sign up
                   <Image
                     src="/images/setabranca.png"

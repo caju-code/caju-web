@@ -64,7 +64,7 @@ export default function MentorCard({
                   href={linkedIn}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-fit flex items-center gap-2 bg-[#0A66C2] text-white font-bold text-lg px-4 py-2 rounded-lg hover:bg-[#004182] transition-all duration-300"
+                  className="w-fit flex items-center gap-2 bg-transparent text-white font-bold text-lg px-4 py-2 rounded-lg border border-white hover:bg-white hover:text-[#0A66C2] transition-all duration-300"
                 >
                   <FaLinkedin size={20} />
                   LinkedIn

@@ -1,6 +1,6 @@
 export default function OurServices() {
   return (
-    <section id="services" className="py-24 pb-40 bg-white/85">
+    <section id="services" className="py-40 pb-40 bg-white/85">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -12,7 +12,7 @@ export default function OurServices() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-16 md:max-w-5xl md:mx-auto md:px-2">
+        <div className="grid lg:grid-cols-2 gap-8 md:max-w-5xl md:mx-auto md:px-2">
           <div className="card--for-business">
             <div className="drop-shadow lg:row-span-2  bg-white p-12 rounded-3xl border-2 border-[#8dbf30] relative overflow-hidden">
               <div className="relative z-10">
