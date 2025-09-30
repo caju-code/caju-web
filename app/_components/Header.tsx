@@ -41,7 +41,7 @@ export default function Header() {
               href="#contact"
               className="text-gray-700 hover:text-[#feaa24] transition-colors font-medium"
             >
-              Contato
+              Inscrição
             </a>
           </nav>
 

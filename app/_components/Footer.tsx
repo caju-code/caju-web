@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+    <footer className="bg-[#221326] text-gray-400 py-16 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div>
@@ -11,8 +11,8 @@ export default function Footer() {
               <span className="text-2xl font-bold text-white">Caju Code</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Transformamos ideias em código que funciona. Um espaço seguro para
-              crescer em tecnologia.
+              Oferecemos soluções completas para transformar sua visão em
+              realidade digital.
             </p>
           </div>
 
@@ -64,7 +64,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-gray-800 text-center">
           <p>
-            &copy; 2024 Caju Code. Todos os direitos reservados. Feito com 💜
+            &copy; 2025 Caju Code. Todos os direitos reservados. Feito com 🤍
             para a comunidade tech.
           </p>
         </div>

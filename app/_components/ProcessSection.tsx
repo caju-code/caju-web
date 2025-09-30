@@ -6,22 +6,22 @@ export default function ProcessSection() {
     {
       num: "1",
       title: "Descoberta",
-      desc: "Entendemos sua visão e objetivos",
+      desc: "Entendemos sua realidade, visão e objetivos",
     },
     {
       num: "2",
       title: "Planejamento",
-      desc: "Criamos a estratégia com você",
+      desc: "Criamos a estratégia específica para você",
     },
     {
       num: "3",
       title: "Desenvolvimento",
-      desc: "Transformamos ideias em código",
+      desc: "Escreva o código e comece a colher frutos",
     },
     {
       num: "4",
       title: "Entrega",
-      desc: "Lançamos seu projeto no mundo",
+      desc: "Transforme cada entrega em experiência prática",
     },
   ];
 
