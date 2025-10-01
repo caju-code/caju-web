@@ -2,29 +2,26 @@
 
 import Header from "./_components/Header";
 import HeroSection from "./_components/Hero";
-import AboutSection from "./_components/About";
-import ServicesSection from "./_components/OurServices";
+import OurServices from "./_components/OurServices";
 import Mentors from "./_components/mentors/Mentors";
-import ValuesSection from "./_components/Values";
-import ProcessSection from "./_components/ProcessSection";
+import Values from "./_components/Values";
+import Process from "./_components/Process";
 import CTASection from "./_components/CTASection";
 import Footer from "./_components/Footer";
-import AnimatedBackground from "./_components/AnimatedBackground";
-import OurServices from "./_components/OurServices";
+import Background from "./_components/Background";
 
 export default function Page() {
   return (
     <>
-      <AnimatedBackground />
+      <Background />
       <div className="min-h-screen overflow-hidden">
         <Header />
         <div className="pt-16">
           <HeroSection />
           <OurServices />
-          {/* <AboutSection /> */}
           <Mentors />
-          <ValuesSection />
-          <ProcessSection />
+          <Values />
+          <Process />
           <CTASection />
         </div>
         <Footer />
