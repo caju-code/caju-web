@@ -136,7 +136,7 @@ export default function Header() {
                 >
                   Faça parte
                   <Image
-                    src="/images/setabranca.png"
+                    src="/svg/setaBranca.svg"
                     alt="Seta"
                     width={20}
                     height={20}
