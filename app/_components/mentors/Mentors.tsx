@@ -36,7 +36,7 @@ export default function Mentors() {
     {
       name: "Fernanda Vilela",
       description:
-        "Dei algumas voltas na vida e quero te ajudar nas suas! Desde os 14, lidando com educação, música, programação e dados. Sou mãe da Caju e tenho a ajuda de vários amigos :)",
+        "Já dei algumas voltas na vida e quero te ajudar nas suas! Desde os 14 lido com educação, hoje amo música, programação e dados. Sou mãe da Caju e idealizadora da Caju Code :)",
       image: "/images/fernanda.png",
       bgColor: "#8CBE2F",
       linkedIn: "https://www.linkedin.com/in/fegvilela/",

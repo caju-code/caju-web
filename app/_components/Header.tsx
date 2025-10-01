@@ -134,7 +134,7 @@ export default function Header() {
                   onClick={handleSignUpClick}
                   className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#feaa24] to-[#8dbf30] text-white px-6 py-3 rounded-3xl font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]"
                 >
-                  Faça parte{" "}
+                  Faça parte
                   <Image
                     src="/images/setabranca.png"
                     alt="Seta"

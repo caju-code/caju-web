@@ -26,7 +26,7 @@ export default function OurServices() {
             borderColor="#1a83c5"
             bulletColor="#f7a82c"
             buttonText="Chame a gente!"
-            buttonLink="mailto:oi@cajucode.com"
+            buttonLink="https://www.linkedin.com/company/caju-code"
           />
           <ServiceCard
             title="Para pessoas"
