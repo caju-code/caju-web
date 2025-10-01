@@ -18,7 +18,7 @@ const jura = Jura({
 export const metadata: Metadata = {
   title: "Caju Code - Mentoria e Consultoria",
   description:
-    "Transformamos suas ideias em soluções digitais incríveis. Desenvolvimento web moderno, apps mobile e consultoria tech.",
+    "Oferecemos soluções completas para transformar sua visão em realidade digital.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
