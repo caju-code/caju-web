@@ -17,44 +17,35 @@ export default function MentorCard({
   linkedIn,
 }: MentorCardProps) {
   return (
-    <div className="transform scale-80 origin-center">
+    <div className="transform scale-75 md:scale-80 origin-center">
       <div className="relative flex justify-center items-center w-full h-full">
         <div className="relative">
           <div
-            className="absolute top-6 left-6 z-0"
+            className="absolute top-4 left-4 md:top-6 md:left-6 z-0 w-[320px] h-[280px] md:w-[442px] md:h-[358px] rounded-[30px] md:rounded-[40px]"
             style={{
-              width: "442px",
-              height: "358px",
               backgroundColor: "#000000",
-              borderRadius: "40px",
               clipPath:
                 'path("M44.2894 41.7354C48.3267 17.6465 69.1768 0 93.6017 0H383.284C410.898 0 433.284 22.3858 433.284 50V308C433.284 335.614 410.898 358 383.284 358H50.3614C19.4461 358 -4.06087 330.225 1.0492 299.735L44.2894 41.7354Z")',
             }}
           />
 
           <div
-            className="relative overflow-hidden flex flex-col z-10"
+            className="relative overflow-hidden flex flex-col z-10 w-[320px] h-[280px] md:w-[442px] md:h-[358px] rounded-[30px] md:rounded-[40px]"
             style={{
-              width: "442px",
-              height: "358px",
               backgroundColor: bgColor,
-              borderRadius: "40px",
               clipPath:
                 'path("M44.2894 41.7354C48.3267 17.6465 69.1768 0 93.6017 0H383.284C410.898 0 433.284 22.3858 433.284 50V308C433.284 335.614 410.898 358 383.284 358H50.3614C19.4461 358 -4.06087 330.225 1.0492 299.735L44.2894 41.7354Z")',
             }}
           >
-            {/* <div className="absolute inset-0 overflow-hidden">
-              <div className="absolute top-8 right-12 w-40 h-20 border-2 border-white/30 rounded-full transform rotate-12" />
-              <div className="absolute bottom-12 right-16 w-24 h-12 border-2 border-white/20 rounded-full transform -rotate-12" />
-            </div> ATENCAO > corrigir background do card*/}
-
-            <div className="relative z-10 p-8 flex flex-col h-full w-2/3 ml-auto text-right">
-              <div className="mb-6">
-                <h3 className="text-white font-bold text-2xl mb-2">{name}</h3>
+            <div className="relative z-10 p-4 md:p-8 flex flex-col h-full w-2/3 ml-auto text-right">
+              <div className="mb-3 md:mb-6">
+                <h3 className="text-white font-bold text-lg md:text-2xl mb-1 md:mb-2">
+                  {name}
+                </h3>
               </div>
 
-              <div className="flex-1 mb-6 text-center">
-                <p className="text-white/90 text-base leading-relaxed">
+              <div className="flex-1 mb-3 md:mb-6 text-center">
+                <p className="text-white/90 text-xs md:text-base leading-relaxed">
                   {description}
                 </p>
               </div>
@@ -64,20 +55,17 @@ export default function MentorCard({
                   href={linkedIn}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-fit flex items-center gap-2 bg-transparent text-white font-bold text-lg px-4 py-2 rounded-lg border border-white hover:bg-white hover:text-[#0A66C2] transition-all duration-300"
+                  className="w-fit flex items-center gap-1 md:gap-2 bg-transparent text-white font-bold text-sm md:text-lg px-3 md:px-4 py-1.5 md:py-2 rounded-lg border border-white hover:bg-white hover:text-[#0A66C2] transition-all duration-300"
                 >
-                  <FaLinkedin size={20} />
+                  <FaLinkedin size={16} className="md:w-5 md:h-5" />
                   LinkedIn
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="absolute -left-14 top-1/2 transform -translate-y-1/2 z-20">
-            <div
-              className="rounded-full overflow-hidden border-4 border-white shadow-lg"
-              style={{ width: "194px", height: "194px" }}
-            >
+          <div className="absolute -left-8 md:-left-14 top-1/2 transform -translate-y-1/2 z-20">
+            <div className="rounded-full overflow-hidden border-3 md:border-4 border-white shadow-lg w-[130px] h-[130px] md:w-[194px] md:h-[194px]">
               <Image
                 src={image}
                 alt={name}
