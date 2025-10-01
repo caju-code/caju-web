@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function Values() {
   const values = [
     {
@@ -33,30 +35,30 @@ export default function Values() {
   ];
 
   return (
-    <section id="values" className="py-40 pb-40 bg-[#8dbf3070]">
+    <section id="values" className="py-40 bg-[#FFFFFF]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-bold text-[#e8471d] mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Nossos Valores
           </h2>
-          <p className="text-xl text-[#e8471d] max-w-2xl mx-auto">
+          <p className="text-xl text-gray-900 max-w-2xl mx-auto">
             Os princípios que guiam nosso trabalho e nossa comunidade.
           </p>
         </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {values.map((value, index) => (
-            <div
+            <motion.div
               key={index}
-              className="p-8 rounded-3xl border-2 bg-[#719e1b] border-white hover:border-current transition-all duration-300 hover:scale-105"
+              className="p-8 border border-black flex flex-col justify-center rounded-lg"
+              initial={{ backgroundColor: "transparent", color: "#000" }}
+              animate={{ backgroundColor: value.color, color: "#fff" }}
+              transition={{ duration: 0.9, delay: index * 0.8 }}
             >
-              <h3 className="text-2xl font-bold text-white mb-4">
-                {value.title}
-              </h3>
-              <p className="text-white leading-relaxed">{value.desc}</p>
-            </div>
+              <h3 className="text-2xl font-bold mb-4">{value.title}</h3>
+              <p className="leading-relaxed">{value.desc}</p>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

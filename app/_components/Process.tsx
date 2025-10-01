@@ -28,7 +28,7 @@ export default function ProcessSection() {
   return (
     <section
       id="process"
-      className="py-40 pb-40 bg-gradient-to-r from-[#f7a82c] via-[#e8471d] to-[#8dbf30]"
+      className="py-40 pb-40 bg-gradient-to-b md:bg-gradient-to-r from-[#f7a82c] via-[#e8471d] to-[#8dbf30]"
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">

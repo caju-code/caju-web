@@ -20,7 +20,7 @@ export default function Mentors() {
     {
       name: "Aline Marjorie",
       description:
-        "Don't worry if you don't fit in with everyone else, we would rather you stand out than fall in line.",
+        "Sempre fui mais de 'humanas', mas acabei me apaixonando por TI. Fiz uma transição de carreira com sucesso e, hoje, quero ajudar mais pessoas a realizarem o mesmo sonho.",
       image: "/images/aline.png",
       bgColor: "#FF9C00",
       linkedIn: "https://www.linkedin.com/in/alinemarjorie/",
@@ -52,7 +52,7 @@ export default function Mentors() {
   ];
 
   return (
-    <section className="py-40 pb-40 bg-gray-50">
+    <section id="mentors" className="py-40 pb-40 bg-gray-50">
       <div className="mentors text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
           Nossos Mentores
