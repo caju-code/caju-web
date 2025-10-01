@@ -52,7 +52,7 @@ export default function Mentors() {
   ];
 
   return (
-    <section className="py-40 pb-40 bg-gray-50">
+    <section id="mentors" className="py-40 pb-40 bg-gray-50">
       <div className="mentors text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
           Nossos Mentores

@@ -7,6 +7,10 @@ import Logo from "../../public/svg/logo.svg";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleSignUpClick = () => {
+    window.open("https://109q5ijo.forms.app/vem-ser-um-cajuzinho", "_blank");
+  };
+
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
@@ -26,7 +30,7 @@ export default function Header() {
               Serviços
             </a>
             <a
-              href="#about"
+              href="#values"
               className="text-gray-700 hover:text-[#feaa24] transition-colors font-medium"
             >
               Sobre
@@ -45,7 +49,11 @@ export default function Header() {
             </a>
           </nav>
 
-          <button className="hidden md:flex items-center gap-2 text-black bg-gradient-to-r from-[#feaa24] to-[#8dbf30] px-6 py-3 rounded-3xl hover:from-[#feaa24] hover:to-[#fb4202] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px] ml-auto">
+          {/* Botão Sign Up desktop */}
+          <button
+            onClick={handleSignUpClick}
+            className="hidden md:flex items-center gap-2 text-black bg-gradient-to-r from-[#feaa24] to-[#8dbf30] px-6 py-3 rounded-3xl hover:from-[#feaa24] hover:to-[#fb4202] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px] ml-auto"
+          >
             Sign up
             <Image
               src="/svg/setaPreta.svg"
@@ -56,6 +64,7 @@ export default function Header() {
             />
           </button>
 
+          {/* Hamburger menu mobile */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden w-10 h-10 flex flex-col justify-center items-center space-y-1 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
@@ -79,6 +88,7 @@ export default function Header() {
         </div>
       </header>
 
+      {/* Mobile menu */}
       {isMenuOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
           <div
@@ -142,8 +152,12 @@ export default function Header() {
                 </a>
               </nav>
 
-              <div className="button-sign-up">
-                <button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#feaa24] to-[#e8471d] text-white px-6 py-3 rounded-3xl hover:from-[#fb4202] hover:to-[#6a4c93] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]">
+              {/* Botão Sign Up mobile */}
+              <div className="mt-6">
+                <button
+                  onClick={handleSignUpClick}
+                  className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#feaa24] to-[#e8471d] text-white px-6 py-3 rounded-3xl hover:from-[#fb4202] hover:to-[#6a4c93] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+                >
                   Sign up
                   <Image
                     src="/images/setabranca.png"
