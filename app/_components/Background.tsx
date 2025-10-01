@@ -9,7 +9,7 @@ export default function AnimatedBackground() {
         fixed inset-0 -z-10 bg-no-repeat bg-center
         top-20 md:top-[80px]
         bg-[url('/svg/bgMobile.svg')] md:bg-[url('/svg/background.svg')]
-        bg-[length:180%_180%] md:bg-[length:160%_160%]
+        bg-[length:140%_140%] md:bg-[length:160%_160%]
       "
     />
   );
