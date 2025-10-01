@@ -5,6 +5,7 @@ interface CardProps {
   borderColor: string;
   bulletColor: string;
   buttonText: string;
+  buttonLink: string;
 }
 
 export default function ServiceCard({
@@ -14,6 +15,7 @@ export default function ServiceCard({
   borderColor,
   bulletColor,
   buttonText,
+  buttonLink,
 }: CardProps) {
   return (
     <div
@@ -36,7 +38,10 @@ export default function ServiceCard({
             </li>
           ))}
         </ul>
-        <button className="bg-gradient-to-r from-[#e8471d] to-[#6a4c93] text-white px-8 py-3 rounded-3xl font-semibold hover:from-[#e8471d] hover:to-[#f7a82c] transition-all shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px] mt-auto">
+        <button
+          onClick={() => window.open(buttonLink, "_blank")}
+          className="bg-gradient-to-r from-[#e8471d] to-[#6a4c93] text-white px-8 py-3 rounded-3xl font-semibold hover:from-[#e8471d] hover:to-[#f7a82c] transition-all shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px] mt-auto"
+        >
           {buttonText}
         </button>
       </div>

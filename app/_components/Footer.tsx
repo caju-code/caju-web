@@ -17,8 +17,6 @@ export default function Footer() {
               realidade digital.
             </p>
           </div>
-
-          {/* Serviços */}
           <div>
             <h4 className="text-white font-semibold mb-4">Serviços</h4>
             <ul className="space-y-2">
@@ -48,12 +46,9 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Contato */}
           <div>
             <h4 className="text-white font-semibold mb-4">Contato</h4>
             <div className="flex space-x-4">
-              {/* LinkedIn */}
               <a
                 href="https://www.linkedin.com/company/caju-code"
                 target="_blank"
@@ -62,8 +57,6 @@ export default function Footer() {
               >
                 <FaLinkedin className="text-white text-lg" />
               </a>
-
-              {/* GitHub */}
               <a
                 href="https://github.com/caju-code"
                 target="_blank"
@@ -72,8 +65,6 @@ export default function Footer() {
               >
                 <FaGithub className="text-white text-lg" />
               </a>
-
-              {/* Email */}
               <a
                 href="mailto:oi@cajucode.com"
                 className="w-10 h-10 bg-[#6a4c93] rounded-full flex items-center justify-center hover:bg-[#1e83c5] transition-colors"
@@ -83,8 +74,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        {/* Copyright */}
         <div className="pt-8 border-t border-gray-800 text-center">
           <p>
             &copy; 2025 Caju Code. Todos os direitos reservados. Feito com 🤍

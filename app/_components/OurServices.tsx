@@ -26,6 +26,7 @@ export default function OurServices() {
             borderColor="#1a83c5"
             bulletColor="#f7a82c"
             buttonText="Chame a gente!"
+            buttonLink="mailto:oi@cajucode.com"
           />
           <ServiceCard
             title="Para pessoas"
@@ -38,6 +39,7 @@ export default function OurServices() {
             borderColor="#6a4c93"
             bulletColor="#e8471d"
             buttonText="Inscreva-se"
+            buttonLink="https://109q5ijo.forms.app/vem-ser-um-cajuzinho"
           />
         </div>
       </div>

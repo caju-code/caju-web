@@ -49,12 +49,11 @@ export default function Header() {
             </a>
           </nav>
 
-          {/* Botão Sign Up desktop */}
           <button
             onClick={handleSignUpClick}
             className="hidden md:flex items-center gap-2 text-black bg-gradient-to-r from-[#feaa24] to-[#8dbf30] px-6 py-3 rounded-3xl hover:from-[#feaa24] hover:to-[#fb4202] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px] ml-auto"
           >
-            Sign up
+            Faça parte
             <Image
               src="/svg/setaPreta.svg"
               alt="Seta"
@@ -64,7 +63,6 @@ export default function Header() {
             />
           </button>
 
-          {/* Hamburger menu mobile */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden w-10 h-10 flex flex-col justify-center items-center space-y-1 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
@@ -88,7 +86,6 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile menu */}
       {isMenuOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
           <div
@@ -97,23 +94,10 @@ export default function Header() {
           ></div>
           <div className="absolute right-0 top-0 h-full w-80 bg-white shadow-xl transform transition-transform">
             <div className="p-6">
-              <div className="flex justify-between items-center mb-8">
-                <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-gradient-to-r from-[#feaa24] to-[#fb4202] rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">C</span>
-                  </div>
-                  <span className="text-xl font-bold text-gray-900">
-                    Caju Code
-                  </span>
-                </div>
-                <button
-                  onClick={() => setIsMenuOpen(false)}
-                  className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700"
-                >
-                  ✕
-                </button>
-              </div>
-
+              <Logo
+                style={{ width: "200px", height: "auto" }}
+                className="hover:text-white transition-colors duration-300 mb-6"
+              />
               <nav className="space-y-6">
                 <a
                   href="#services"
@@ -123,42 +107,34 @@ export default function Header() {
                   Serviços
                 </a>
                 <a
-                  href="#about"
+                  href="#values"
                   className="block text-lg text-gray-700 hover:text-[#1e83c5] transition-colors py-2 border-b border-gray-100"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Sobre
                 </a>
                 <a
-                  href="#values"
-                  className="block text-lg text-gray-700 hover:text-[#8dbf30] transition-colors py-2 border-b border-gray-100"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Valores
-                </a>
-                <a
                   href="#process"
-                  className="block text-lg text-gray-700 hover:text-[#6a4c93] transition-colors py-2 border-b border-gray-100"
+                  className="block text-lg text-gray-700 hover:text-[#8dbf30] transition-colors py-2 border-b border-gray-100"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Processo
                 </a>
                 <a
                   href="#contact"
-                  className="block text-lg text-gray-700 hover:text-[#feaa24] transition-colors py-2 border-b border-gray-100"
+                  className="block text-lg text-gray-700 hover:text-[#6a4c93] transition-colors py-2 border-b border-gray-100"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Contato
+                  Incrição
                 </a>
               </nav>
 
-              {/* Botão Sign Up mobile */}
               <div className="mt-6">
                 <button
                   onClick={handleSignUpClick}
-                  className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#feaa24] to-[#e8471d] text-white px-6 py-3 rounded-3xl hover:from-[#fb4202] hover:to-[#6a4c93] transition-all duration-300 font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+                  className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#feaa24] to-[#8dbf30] text-white px-6 py-3 rounded-3xl font-semibold shadow-[4px_4px_0px_0px_#000000] hover:shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[-2px] hover:translate-y-[-2px]"
                 >
-                  Sign up
+                  Faça parte{" "}
                   <Image
                     src="/images/setabranca.png"
                     alt="Seta"
