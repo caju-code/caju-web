@@ -10,7 +10,7 @@ export default function CTASection() {
     >
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-6xl font-bold mb-8 text-gray-900 leading-tight">
-          Pronto para começar
+           Vamos lá começar
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#719e1b] to-[#1e83c5]">
             sua jornada?
           </span>
