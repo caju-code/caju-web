@@ -42,6 +42,14 @@ export default function Mentors() {
       linkedIn: "https://www.linkedin.com/in/mendesiasmin/",
     },
     {
+      name: "Maurício Costa",
+      description:
+        "Capixaba, flamenguista & gamer. Eng. de Produção, mas me encontrei em Dados. A transição de carreira pode ser confusa, vou te ajudar a descomplicar. Bora?",
+      image: "/images/mau.png",
+      bgColor: "#cda466",
+      linkedIn: "https://www.linkedin.com/in/mauricio-costa/",
+    },
+    {
       name: "Saphira Cardoso",
       description:
         "Já estive do outro lado, começando do zero e cheia de dúvidas. Acredito que tecnologia não é só sobre código, mas sobre abrir portas e criar oportunidades.",
