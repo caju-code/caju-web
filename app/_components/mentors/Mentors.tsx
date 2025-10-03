@@ -36,7 +36,7 @@ export default function Mentors() {
     {
       name: "Iasmin Mendes",
       description:
-        "Eng. de Software & forrozeira de coração. Não planejei atuar na área, mas aqui estou e o que eu AMO sobre software é a COLABORAÇÃO: aprender e construir algo JUNTOS. Vamos?",
+        "Eng. de software pra pagar as contas, forrozeira de coração. Escrever código pode ser divertido, mas o melhor da TI é aprender e construir JUNTOS, em colaboração. Vamos?",
       image: "/images/iasmin.png",
       bgColor: "#FB4202",
       linkedIn: "https://www.linkedin.com/in/mendesiasmin/",
